@@ -94,6 +94,43 @@ public class bitwiseOpe {
 
         System.out.println("10 >>3 = " + (10 >> 3)); // 10/(2^3) == 1
 
+        // SOME IMPORTANT PROPERTIES ------------------------------------------------
+
+        // 1. AND ,OR ,XOR are Assosiative and Commutative
+
+        // 2. A^0 = A
+
+        System.out.println("7^0 = " + (7 ^ 0));
+
+        // 3. A^A = 0
+
+        System.out.println("5^5 = " + (5 ^ 5));
+
+        // 4. IF A^B = C Then A^C = B
+
+        int a = 3, b = 8;
+
+        int c = a ^ b;
+
+        System.out.println(a ^ c); // b
+        System.out.println(b ^ c); // a
+
+        // 5. A^B^B= A
+
+        // 6. A&B <= MIN(A,B)
+
+        // 7. A|B >= MAX(A,B)
+
+        // 8. (A|B) +(A&B)= A+B
+
+        int k = 4, m = 7;
+
+        System.out.println("k+m = " + ((k & m) + (k | m)));
+
+        // 9. (A&1) Is 1 If A is Odd else 0
+
+        // 10. A&(A-1) Is 0 if A is Power of 2 (except when A=0)
+
     }
 
 }
