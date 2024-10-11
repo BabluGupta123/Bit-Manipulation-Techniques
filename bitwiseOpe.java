@@ -1,4 +1,3 @@
-# Bit-Manipulation-Techniques
 import java.util.*;
 
 public class bitwiseOpe {
@@ -95,6 +94,12 @@ public class bitwiseOpe {
         System.out.println("10 >>3 = " + (10 >> 3)); // 10/(2^3) == 1
 
         // SOME IMPORTANT PROPERTIES ------------------------------------------------
+
+        // 0. pow (2, N) = 1<<N (very imp.)
+
+        int N = 10;
+
+        System.out.println("pow(2,N) = " + Math.pow(2, N) + ", 1<<N = " + (1 << N));
 
         // 1. AND ,OR ,XOR are Assosiative and Commutative
 
